@@ -1,9 +1,5 @@
-import Entity.People;
-import Entity.Phone;
-import HibernateUtil.HibernateUtil;
-import org.hibernate.Hibernate;
+import ManyToOne.HibernateUtil.HibernateUtil;
 import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
 
 /**
  * Created by savva on 07.07.2015.

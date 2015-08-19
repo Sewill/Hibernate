@@ -7,7 +7,7 @@
           <unit-entry name="HibernateUtil:hibernate.cfg.xml" />
         </datasource-map>
         <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/HibernateUtil/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/ManyToOne/HibernateUtil/hibernate.cfg.xml" />
       </configuration>
     </facet>
   </component>
@@ -18,7 +18,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="hibernate" level="project" />
+    <orderEntry type="library" name="antlr-2.7.7" level="project" />
     <orderEntry type="library" name="sqljdbc4" level="project" />
   </component>
 </module>

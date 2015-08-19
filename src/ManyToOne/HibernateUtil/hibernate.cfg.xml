@@ -13,7 +13,7 @@
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
 
-        <mapping class="Entity.People"/>
-        <mapping class="Entity.Phone"/>
+        <mapping class="ManyToOne.Entity.People"/>
+        <mapping class="ManyToOne.Entity.Phone"/>
     </session-factory>
 </hibernate-configuration>

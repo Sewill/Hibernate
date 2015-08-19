@@ -1,11 +1,8 @@
-import Entity.People;
-import HibernateUtil.HibernateUtil;
+import ManyToOne.HibernateUtil.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 
 

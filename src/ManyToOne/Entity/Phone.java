@@ -1,6 +1,4 @@
-package Entity;
-
-import org.hibernate.annotations.GenericGenerator;
+package ManyToOne.Entity;
 
 import javax.persistence.*;
 
@@ -8,7 +6,7 @@ import javax.persistence.*;
  * Created by savva on 09.07.2015.
  */
 @Entity
-@Table(name = "phones")
+@Table(name = "phones_min")
 public class Phone {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,6 +14,14 @@ public class Phone {
     private int id;
     @Column(name = "number")
     private String number;
+
+    public Phone() {
+    }
+
+    public Phone(String number, People people) {
+        this.number = number;
+        this.people = people;
+    }
 
     public int getId() {
         return id;
@@ -33,8 +39,7 @@ public class Phone {
         this.number = number;
     }
 
-    @ManyToOne(targetEntity = People.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_poeple")
+    @ManyToOne(targetEntity = People.class)
     private People people;
 
     public People getPeople() {
